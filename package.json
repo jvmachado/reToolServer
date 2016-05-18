@@ -1,0 +1,20 @@
+{
+  "name": "reToolServer",
+  "version": "1.0.0",
+  "description": "Servidor da aplicação reTool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "João Vítor Machado",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "fs": "0.0.2",
+    "https": "^1.0.0",
+    "mongoose": "^4.4.17",
+    "open": "0.0.5",
+    "path": "^0.12.7",
+    "request": "^2.72.0"
+  }
+}
