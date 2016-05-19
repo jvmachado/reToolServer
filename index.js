@@ -23,13 +23,13 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
   // we're connected!
 });
-
+app.use('/',require('./routes'));
 //popular o banco
 setInterval(function(){
-populaBanco.insertIndicator(function(res){
-console.log(res);
-})},1000*60);
+	populaBanco.insertIndicator(function(res){
+		console.log(res);
+	})},1000*60 * 60 * 3);
 //fim da população do banco
 
-app.listen(num);	
 
+app.listen(num);

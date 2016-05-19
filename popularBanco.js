@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var Indicador = require("./indicadoresSchema");
+var Indicador = require("./model/indicadoresSchema");
 
 var service = {};
 service.findLastRegister = findLastRegister;
