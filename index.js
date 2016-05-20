@@ -3,9 +3,12 @@ var open      = require('open');
 var mongoose  = require('mongoose');
 var populaBanco = require("./popularBanco");
 var app       = express();
+var bodyParser = require('body-parser');
 var info = "";
 var num = 4000;
-
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.json({ type: 'application/vnd.api+json' })); 
 //PERMITE ACESSO
 app.use(function(req, res, next){
 	res.append('Access-Control-Allow-Origin', req.headers.origin || '*');
