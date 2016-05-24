@@ -39,7 +39,6 @@ function storeDevices (deviceId,registrationId,callback){
             newDevice.save(function(err){
  
                 if (!err) {
-                    console.log("entrou aqui")
                     callback("Salvo!");
  
                 } else {

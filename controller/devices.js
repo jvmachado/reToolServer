@@ -17,20 +17,14 @@ getDevices:function (req, res, next) {
     },
     
     storeDevices:function(req,res,next){
-        console.log("oq ta vindo: "+req.body.token);
         var deviceId = req.body.device;
         var registrationId = req.body.token;
-        console.log("é aqui que ta essa merda: "+req.body.device);
-        console.log(req.body.token);
         if ( typeof deviceId  == 'undefined' ||  typeof registrationId  == 'undefined' ) {
- 
-            console.log("parâmetros invalidos");
  
             res.send("parâmetros invalidos");
  
         } else if (!deviceId.trim() || !registrationId.trim() ) {
  
-            console.log("parâmetro vazio");
  
             res.send("parâmetro vazio");
  
