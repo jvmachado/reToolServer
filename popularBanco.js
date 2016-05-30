@@ -30,13 +30,13 @@ function insertIndicator(callback){
 		
 		if(tendencia == 1){
 			valorComparacao= valor,
-			valor= valor * 1.05,
+			valor= valor * 1.5,
 			corpo= "A loja Retool Praia de belas superou a média de vendas das últimas 4 semanas.";
-			image = "http://i.imgur.com/fvwwQHg.png";
+			image = "http://i.imgur.com/9n1wpSv.png";
 		} else{
 			valor= valorComparacao * 0.95;
 			corpo= "A loja Retool Praia de belas apresentou queda na média de vendas em comparação com as últimas 4 semanas.";
-			image= "http://i.imgur.com/0K3th9S.png";
+			image= "http://i.imgur.com/SEQ61tw.png";
 		}
 		var data = new Date();
 		var newItem = {
@@ -74,9 +74,13 @@ function insertIndicator(callback){
 					"message": lastRegister.corpo,
 					"image": image,
 					"android": {
+						"data": {
 						"title": lastRegister.titulo,
 						"message": lastRegister.corpo,
 						"image": image,
+						"style" : "inbox",
+						"summaryText": "há %n% notificações"
+					}
 					},
 					"ios": {
 						"title": "Howdy",

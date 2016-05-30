@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
  
  
 var deviceSchema = mongoose.Schema({ 
-    deviceId      : { type: String, index: { unique: true }},
+    deviceId      : { type: String, index: { unique: false }},
     registrationId  :{ type: String, index: { unique: true }}
 });
  

@@ -37,7 +37,7 @@ console.log("ta aqui agora");
 	populaBanco.insertIndicator(function(res){
 		console.log("entrou");
 	});
-}, 1000*10);
+}, 1000*60*30);
 //fim da população do banco
 
 
